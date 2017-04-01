@@ -1,0 +1,23 @@
+{
+  "name": "weatheriniceland",
+  "version": "1.0.0",
+  "description": "Simple CLI tool to get the weather in Iceland. Currently only in Icelandic.",
+  "main": "vedur.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skabbi/WeatherInIceland.git"
+  },
+  "author": "Skabbi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skabbi/WeatherInIceland/issues"
+  },
+  "homepage": "https://github.com/skabbi/WeatherInIceland#readme",
+  "dependencies": {
+    "axios": "^0.16.0",
+    "colors": "^1.1.2"
+  }
+}
