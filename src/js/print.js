@@ -22,7 +22,17 @@ const weatherText = (text) => {
   });
 };
 
+const errorResponse = (e) => {
+  const { status, statusText } = e.response;
+  console.log(`
+    Failed to get weather forecast.
+    Status code: ${status}
+    Error message: ${statusText}
+  `.bold.red);
+};
+
 module.exports = {
   weatherObservation,
   weatherText,
+  errorResponse,
 };

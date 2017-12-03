@@ -10,8 +10,8 @@ async function displayWeatherForcast() {
 
     print.weatherObservation(weatherObservationRvk);
     print.weatherText(weatherText);
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    print.errorResponse(error);
   }
 }
 
