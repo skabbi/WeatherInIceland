@@ -4,7 +4,8 @@
   "description": "Simple CLI tool to get the weather in Iceland. Currently only in Icelandic.",
   "main": "vedur.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint *.js **/*.js --fix",
+    "dev": "nodemon --exec npm run lint"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,11 @@
   "dependencies": {
     "axios": "^0.16.0",
     "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.12.1"
   }
 }
